@@ -13,4 +13,5 @@ jobs:
         with: 
           node-version : 16
       - name : Run the actual js File
+        run : node index.js
       
