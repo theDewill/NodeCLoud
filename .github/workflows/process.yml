@@ -1,0 +1,16 @@
+name : firstGithubAction
+on: 
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the Code
+        uses: actions/checkout/@v2
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with: 
+          node-version : 16
+      - name : Run the actual js File
+      
